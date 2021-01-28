@@ -1,0 +1,13 @@
+.showcase{
+    width: 90%;
+    min-height: 91.5vh;
+    // min-width: 900px;
+    display: flex;
+    overflow: hidden;
+}
+
+@media screen and (max-width:900px){
+    .showcase{
+        width: 100%;
+    }
+}

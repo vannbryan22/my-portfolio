@@ -1,0 +1,201 @@
+.home{
+    width: 90%;
+    min-width: 900px;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__sectOne{
+    flex: 0.4;
+    display: flex;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+
+    &Info{
+        display: flex;
+        height: 70%;
+        width: 80%;
+        border-radius: 1rem;
+        flex-direction: column;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        padding: 8px 0;
+    }
+
+    &InfoImage{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin-left: 1rem;
+            border: 1px solid white;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+
+        }
+    }
+
+    .home__sectOneTexts{
+        padding: 0 1rem;
+        font-size: smaller;
+
+        h4{
+            font-weight: 800;
+            color: darken($primaryColor, 10%);
+        }
+
+        div{
+            margin-top: 4px;
+
+            p{
+                margin-left: 10px;
+            }
+        }
+        &Name{
+            margin-top: 4px;
+            h1{
+                color: darken($primaryColor, 20%);
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.home__sectTwo{
+    flex:0.6;
+    min-width: 500px;
+    height: 100%;
+    flex-direction: column;
+    min-height: 580px;
+    max-height: 580px;
+
+    &Details{
+        display: flex;
+        width: 90%;
+        height: 80%;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        border-radius: 1rem;
+        flex-direction: column;
+
+        div{
+            margin-left: 1rem;
+            margin-right: 1rem;    
+        }
+
+        h2{
+            font-weight: 800;
+            color: darken($primaryColor, 20%);
+        }
+
+        h4{
+            margin-top: .5rem;
+            color: $primaryColor;
+        }
+
+        p{
+            color: $textColor;
+            font-size: smaller;
+        }
+
+        h5{
+            margin-top: .5rem;
+            color: $primaryColor;
+        }
+        
+        .home__sectTwoTechnologiesFrontend{
+            width: 95%;
+            height: 80px;
+            
+            p{ 
+                margin-left: 1rem;
+                margin-top: .5rem;
+                text-decoration: underline;
+                display: inline-block;
+                font-weight: 550;
+            }
+        }
+
+        .home__sectTwoTechnologiesBackend{
+            width: 95%;
+            height: 80px;
+            
+            p{ 
+                margin-left: 1rem;
+                margin-top: .5rem;
+                text-decoration: underline;
+                display: inline-block;
+                font-weight: 550;
+            }
+        }
+
+        .home__sectTwoTechnologiesTools{
+            width: 95%;
+            height: 80px;
+            
+            p{ 
+                margin-left: 1rem;
+                margin-top: .5rem;
+                text-decoration: underline;
+                display: inline-block;
+                font-weight: 550;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        min-width: fit-content;
+        margin-top: 54px;
+    }
+
+    .home__sectOne{
+        display: flex;
+        width: 98%;
+        margin-top: 1rem;
+        height: 90vh;
+
+        .home__sectOneInfo{
+            min-height: 350px;
+            max-height: 360px;
+            max-width: 400px;
+        }
+    }
+
+    .home__sectTwo{
+        margin-top: 1rem;
+        width: 90%;
+        height: 100vh;
+        min-width: fit-content;
+
+        .home__sectTwoDetails{
+            height: fit-content;
+            padding: 20px 0;
+            max-width: 600px;
+        }
+
+        .home__sectTwoTechnologiesFrontend{
+            height: fit-content;
+        }
+
+        .home__sectTwoTechnologiesBackend{
+            height: fit-content;
+        }
+
+        .home__sectTwoTechnologiesTools{
+            height: fit-content;
+        }
+        
+    }
+}
